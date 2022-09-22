@@ -1,0 +1,10 @@
+export { BellOutline } from "./bell-outline";
+export { BellSolid } from "./bell-solid";
+export { BriefcaseOutline } from "./briefcase-outline";
+export { BriefcaseSolid } from "./briefcase-solid";
+export { HomeOutline } from "./home-outline";
+export { HomeSolid } from "./home-solid";
+export { IdcardOutline } from "./idcard-outline";
+export { IdcardSolid } from "./idcard-solid";
+export { UserOutline } from "./user-outline";
+export { UserSolid } from "./user-solid";
