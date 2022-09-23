@@ -10,12 +10,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import TopHeadlineCard from "../cards/top-headline-card";
+import { StarContainer } from "./star-container";
 
 const Reviews = () => {
   return (
     <div className="w-full my-20">
-         <div className=" my-4 md:my-8 text-base md:text-4xl font-semibold">
-        <span className="underline underline-offset-4">{"CLIENT'S"} </span> FEEDBACK
+         <div className=" my-4 md:my-8  ">
+      
+        <TopHeadlineCard title="Feedbacks"/>
       </div>
       <Swiper
         // install Swiper modules
@@ -35,7 +38,8 @@ const Reviews = () => {
                 src={review.imageUrl}
                 alt=""
               />
-              <div className="text-2xl my-4 font-semibold" >{review.name}</div>
+              <div className="text-2xl mt-4 font-semibold" >{review.name}</div>
+              <StarContainer showStarCount={false} star={5} />
               <div className="text-xl w-[90%] pb-8 text-center ">{review.review}</div>
             </div>
           </SwiperSlide>

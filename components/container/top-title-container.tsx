@@ -1,4 +1,5 @@
 import React from "react";
+import Mailto from "./mail-to";
 
 const TopTitleContainer = () => {
   return (
@@ -13,9 +14,12 @@ const TopTitleContainer = () => {
           {`I'm React JS Developer based in #UK. I will design and develop your web application exactly the way you want.
 `}
         </div>
+        <Mailto email="sdmahfuz@gmail.com" body="" subject="">
         <div className="px-4 mx-auto flex-nowrap w-28 py-3 font-semibold border-black border-[1px] cursor-pointer">
             {`Let's Talk`}
           </div>
+          </Mailto>
+       
       </div>
     </div>
   );

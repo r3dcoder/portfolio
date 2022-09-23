@@ -12,7 +12,7 @@ export const demoFeatures: Feature[] = [
     iconName: "GrammarIcon",
     title: "Super Fast Static Website",
     description:
-      "Whith Help of Next Js I create performant web applications and superfast static websites.",
+      "Superior website speed. Using Next JS technology built with your users in mind. ",
   },
   {
     iconName: "TranslationIcon",

@@ -1,78 +1,98 @@
 import React from "react";
+import ProgressBar from "../cards/progress-bar";
+import TopHeadlineCard from "../cards/top-headline-card";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "../icons/social";
+import GithubIcon from "../icons/social/github";
 
 export const AboutMe = () => {
-    return (
-        <div   className="  w-full h-auto md:h-screen flex flex-col place-items-center py-12">
-            <div className="w-full text-base md:text-4xl font-bold text-center">
-                About me
-                 <div className="flex flex-col place-items-center space-y-1">
-                    <div className="w-40 h-[1px] bg-gray-500"></div>
-                    <div className="w-60 h-[1px] bg-gray-600"></div>
-                    <div className="w-40 h-[1px] bg-gray-500"></div>
-                 </div>
-            </div>
+  return (
+    <div className="  w-full h-auto md:h-screen flex flex-col place-items-center py-12">
+      <TopHeadlineCard title="About Me" />
+      <div className=" my-4 md:my-8 md:flex md:space-x-10 place-items-center w-full text-gray-900 ">
+        <DescriptionSegment />
+        <SkillsSegment />
+      </div>
+    </div>
+  );
+};
 
-            <div className=" my-4 md:my-8 md:flex md:space-x-10 place-items-center w-full ">
-                <div className="hidden md:block w-full md:w-1/2 ">
-                    <div className=" relative w-full md:w-full h-auto md:h-[420px] overflow-hidden p-4 bg-gray-100  rounded-md shadow-md">
-                        <img
-                            src="/my-image.jpeg"
-                            className="w-full h-full object-cover  rounded-md"
-                            alt=""
-                        />
-                        <div className=" absolute top-4 left-4  bg-transparent ">
-                            <div className="flex flex-col space-y-2">
-                                <div className="p-[5px] bg-black">
-                                    <FacebookIcon />
-                                </div>
-                                <div className="p-[5px] bg-black"><InstagramIcon /></div>
-                                <div className="p-[5px] bg-black"><LinkedinIcon /></div>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className=" py-2 w-full md:w-1/3 md:flex-grow flex-wrap flex flex-col space-y-4">
-                    <div className="text-base md:text-4xl font-bold"> Im Mahfuz</div>
-                    <div className="text-sm md:text-base font-semibold text-gray-500 my-2 ">
-                        A FRONT END DEVELOPER BASED IN UK
-                    </div>
-                    <div className="text-xs md:text-base max-w-[100vh] break-words">
-                    {"I am a web developer with over two years of experience with modern technologies like React, Next JS, Tailwind CSS, Laravel, Node JS, Express JS, Firebase, MySQL and so on. To improve user experience and your business, I put all of my enthusiasm and effort into creating fully dynamic and responsive websites."}
-                     </div>
-                    <div className=" md:flex md:space-x-16 w-full  mt-4 md:mt-8">
-                        <div className="flex flex-col space-y-3">
-                            <div className="flex space-x-3 text-sm">
-                                <div>Email</div>
-                                <div className="text-gray-600">|</div>
-                                <div className="text-gray-600">sdmahfuz@gmail.com</div>
-                            </div>
-                            <div className="flex space-x-3 text-sm">
-                                <div>Studying</div>
-                                <div className="text-gray-600">|</div>
-                                <div className="text-gray-600">MSC Computing</div>
-                            </div>
-
-                        </div>
-                        <div className="flex flex-col space-y-3">
-
-                            <div className="flex space-x-3 text-sm">
-                                <div>Residence</div>
-                                <div className="text-gray-600">|</div>
-                                <div className="text-gray-600">United Kingdom</div>
-                            </div>
-                            <div className="flex space-x-3 text-sm">
-                                <div>Address</div>
-                                <div className="text-gray-600">|</div>
-                                <div className="text-gray-600">Northampton, England</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+const DescriptionSegment = () => {
+  return (
+    <div className="hidden md:block w-full md:w-1/2 ">
+      <div className=" relative w-full md:w-full h-auto text-gray-900 overflow-hidden  ">
+        <div className="text-left w-full text-2xl my-2 font-semibold">
+          WHO AM I?
         </div>
-    );
+        <div className="leading-10 text-xl">
+          {
+            "I am a web developer with over two years of experience with modern technologies like React, Next JS, Tailwind CSS, Laravel, Node JS, Express JS, Firebase, MySQL and so on. To improve user experience and your business, I put all of my enthusiasm and effort into creating fully dynamic and responsive websites."
+          }
+        </div>
+
+        <div className="flex space-x-3 my-4 place-items-center">
+          <div className="text-xl font-semibold">Find Me</div>
+          <a
+            href="https://www.linkedin.com/in/mahfuz-hasan/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="p-[5px] bg-black">
+              <LinkedinIcon />
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/r3dcoder"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="p-[5px] bg-black">
+              <GithubIcon />
+            </div>
+          </a>
+
+          <a
+            href="https://www.facebook.com/mahfuz.lucs/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="p-[5px] bg-black">
+              <FacebookIcon />
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/m4hfuz_/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="p-[5px] bg-black">
+              <InstagramIcon />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SkillsSegment = () => {
+  return (
+    <div className=" py-2 w-full md:w-1/2 md:flex-grow flex-wrap flex flex-col space-y-4">
+      <div className="text-left w-full text-2xl my-2 font-semibold">
+        Expert IN
+      </div>
+      <div className="flex flex-col space-y-10 py-5">
+        <ProgressBar name="JavaScript" progressPercentage={80} />
+        <ProgressBar name="React" progressPercentage={80} />
+        <ProgressBar name="Next JS" progressPercentage={85} />
+        <ProgressBar name="Tailwind CSS" progressPercentage={90} />
+        <ProgressBar name="CSS" progressPercentage={80} />
+        <ProgressBar name="HTML" progressPercentage={90} />
+        <ProgressBar name="TypeScript" progressPercentage={95} />
+        <ProgressBar name="Laravel" progressPercentage={80} />
+        <ProgressBar name="NodJs" progressPercentage={65} />
+      </div>
+    </div>
+  );
 };

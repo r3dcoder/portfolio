@@ -48,7 +48,7 @@ const NavButtonSegment=({onChangeScroll}:Props)=>{
           {sideMenus.map((item: Menu, index: number) => (
             <div key={index} onClick={()=>onChangeScroll(item.id)} className="font-thin text-xl cursor-pointer">{item.label}</div>
           ))}
-          <Mailto email="sdmahfuz@gmail.com" body="hi" subject="from my domain">
+          <Mailto email="sdmahfuz@gmail.com" body="" subject="">
           <div className="px-4 py-2 w-24 text-center font-semibold border-black border-[1px] cursor-pointer">
             Hire Me
           </div>

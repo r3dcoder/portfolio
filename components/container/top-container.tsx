@@ -1,4 +1,5 @@
 import React from 'react'
+import Mailto from './mail-to'
 
 export const TopContainer = () => {
   return (
@@ -32,9 +33,12 @@ export const TopContainer = () => {
                 <button className="px-4 py-2 bg-black text-white hover:text-black hover:bg-white shadow-md">
                   My Work
                 </button>
+                <Mailto email="sdmahfuz@gmail.com" body="" subject="">
                 <div className="px-4 py-2 bg:white border-black border-2  bg-black bg-opacity-40">
                   Hire Me
                 </div>
+          </Mailto>
+               
               </div>
             </div>
           </div>
