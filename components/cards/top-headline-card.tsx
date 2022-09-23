@@ -5,7 +5,7 @@ interface Props{
 }
 const TopHeadlineCard = ({title}:Props) => {
   return (
-    <div className="w-full text-base md:text-4xl font-bold text-center">
+    <div className="w-full text-3xl md:text-4xl font-bold text-center">
         {title}
         <div className="flex flex-col place-items-center space-y-1">
           <div className="w-40 h-[1px] bg-gray-600"></div>

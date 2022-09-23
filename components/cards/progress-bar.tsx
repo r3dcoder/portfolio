@@ -15,7 +15,7 @@ const ProgressBar = ({ progressPercentage, name }:Porps) => {
     return (
         <div className='h-[6px] w-full bg-gray-300 relative '>
             <div className={`absolute -top-5 font-semibold  text-gray-800 text-sm ${`left-[`+0+`%]`} `}>{name}</div>
-            <div style={{ left: `${percentage}%`}} className={`absolute -top-5 px-[6px] py-1 bg-gray-800 text-white text-xs  `}>{percentage}%</div>
+            <div style={{ left: `${percentage-6}%`}} className={`absolute -top-[18px] px-[6px] py-1 bg-gray-800 text-white text-xs  `}>{percentage}%</div>
             <div
                 style={{ width: `${percentage}%`}}
                 className={`h-full ${

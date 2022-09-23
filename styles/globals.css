@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* html {
+html {
     scroll-behavior: smooth;
-  } */
+  }
+
+
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: rgba(16, 28, 36, 0.897) !important;
+    border-radius: 5px !important;
+    width: 20px !important;
+}
