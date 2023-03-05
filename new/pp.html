@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox Example</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			flex: 0 0 auto;
+		}
+		
+		.sidebar {
+			background-color: #f2f2f2;
+			padding: 10px;
+			flex: 0 0 200px;
+		}
+		
+		.main-content {
+			background-color: #fff;
+			padding: 10px;
+			flex: 1 0 auto;
+		}
+		
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			flex: 0 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My Website</h1>
+	</header>
+	
+	<div class="sidebar">
+		<h2>Sidebar</h2>
+		<p>Some content here</p>
+	</div>
+	
+	<div class="main-content">
+		<h2>Main Content</h2>
+		<p>Some content here</p>
+		<p>More content here</p>
+	</div>
+	
+	<footer class="footer">
+		<p>&copy; 2023 My Website</p>
+	</footer>
+</body>
+</html>
+

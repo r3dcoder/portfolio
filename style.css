@@ -1,10 +1,29 @@
+
+.topbar {
+    background-color: #24b6d3;
+    color: #fff;
+    padding: 10px;
+     text-align: center;
+    width: 100%;
+}
+
+
+.main_page{
+    display: flex;
+    width: 100%;
+    
+}
+
+.left{
+    width: 250px;
+}
 .menu-wrapper {
     background-color: #fff;
     position: absolute;
     top: 0;
     left: -100%;
     bottom: 0;
-    width: 250px;
+    width: 200px;
     box-shadow: inset 0 -3em 1em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em .5em rgba(0, 0, 0, 0.3);
      /* overflow-y: auto;  */
