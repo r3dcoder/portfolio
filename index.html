@@ -19,11 +19,12 @@
 </head>
 
 <body>
+  <div  id="overlay"></div>
 
   <!-- <div class="topbar">SM Hassan</div> -->
   <div class="main_page">
 
-    <div class="left">
+    <div class="left show">
       <div class="menu-wrapper show">
         <div class="menu-icon-wrapper">
           <a href="" class="menu-icon active"></a>
@@ -80,7 +81,27 @@
     </div>
   
     <div>
-      Head
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit hic accusantium corrupti est cum recusandae blanditiis praesentium, sapiente fuga aliquam omnis veniam repellat asperiores ex sunt voluptate similique!</p>
     </div>
   
   
@@ -121,9 +142,11 @@
       if (w <= s) {
         $(".menu-icon").removeClass("active");
         $(".menu-wrapper").addClass("hide").removeClass("show");
-      } else {
+        $(".left").addClass("hide").removeClass("show");
+       } else {
         $(".menu-icon").addClass("active");
         $(".menu-wrapper").addClass("show").removeClass("hide");
+        $(".left").addClass("show").removeClass("hide");
       }
     }
 
@@ -138,9 +161,13 @@
 
       if ($(this).hasClass("active")) {
         $(this).parents(".menu-wrapper").addClass("show").removeClass("hide");
+        $("#overlay").addClass("overlay");
+
 
       } else {
         $(this).parents(".menu-wrapper").addClass("hide").removeClass("show");
+        $("#overlay").removeClass("overlay");
+
       }
     });
   });
